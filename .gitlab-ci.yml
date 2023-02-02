@@ -1,9 +1,9 @@
 # Include our templates for rust and docker:
 include:
-  - project: 'famedly/company/devops/templates/ci-cd'
+  - project: "famedly/infra/templates/ci-cd"
     ref: rust-v1
     file:
-      - '/rust.yml'
+      - "/rust.yml"
 
 # Different CI stages, that are shown as dots in the GitLab UI and
 # are executed one after another
