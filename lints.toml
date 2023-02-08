@@ -2,7 +2,9 @@
 # For all clippy lints please visit: https://rust-lang.github.io/rust-clippy/master/
 #
 deny = []
-allow = []
+allow = [
+    'clippy::tabs_in_doc_comments',
+]
 warn = [
     'clippy::branches_sharing_code',
     'clippy::cast_lossless',
