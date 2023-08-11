@@ -1,15 +1,15 @@
 # Project Name
 
-[![pipeline status][badge-pipeline-img]][badge-pipeline-url]
-[![coverage report][badge-coverage-img]][badge-coverage-url]
+[![rust workflow status][badge-rust-workflow-img]][badge-rust-workflow-url]
+[![docker workflow status][badge-docker-workflow-img]][badge-docker-workflow-url]
 [![docs main][badge-docs-main-img]][badge-docs-main-url]
 
-[badge-pipeline-img]: https://gitlab.com/famedly/company/backend/templates/service-template/badges/main/pipeline.svg
-[badge-pipeline-url]: https://gitlab.com/famedly/company/backend/templates/service-template/-/commits/main
-[badge-coverage-img]: https://gitlab.com/famedly/company/backend/templates/service-template/badges/main/coverage.svg
-[badge-coverage-url]: https://gitlab.com/famedly/company/backend/templates/service-template/-/commits/main
+[badge-rust-workflow-img]: https://github.com/famedly/rust-library-template/actions/workflows/rust.yml/badge.svg
+[badge-rust-workflow-url]: https://github.com/famedly/rust-library-template/commits/main
+[badge-docker-workflow-img]: https://github.com/famedly/rust-library-template/actions/workflows/docker.yml/badge.svg
+[badge-docker-workflow-url]: https://github.com/famedly/rust-library-template/commits/main
 [badge-docs-main-img]: https://img.shields.io/badge/docs-main-blue
-[badge-docs-main-url]: https://famedly.gitlab.io/company/backend/templates/service-template/project_name/index.html
+[badge-docs-main-url]: https://famedly.github.io/rust-library-template/project_name/index.html
 
 Short description of the project.
 
@@ -41,7 +41,7 @@ A few lints are commented out in `lints.toml`. This is because they should not b
 **This project is part of the source code of Famedly.**
 
 We think that software for healthcare should be open source, so we publish most
-parts of our source code at [gitlab.com/famedly](https://gitlab.com/famedly/company).
+parts of our source code at [github.com/famedly](https://github.com/famedly).
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of
 conduct, and the process for submitting pull requests to us.
