@@ -12,7 +12,7 @@ repos:
     -   id: end-of-file-fixer
     -   id: mixed-line-ending
     -   id: trailing-whitespace
--   repo: git@gitlab.com:famedly/company/backend/templates/pre-commit-templates.git
+-   repo: git@github.com:famedly/backend-pre-commit-templates.git
     rev: main
     hooks:
     -   id: fmt
