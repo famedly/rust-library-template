@@ -15,18 +15,14 @@ Short description of the project.
 
 ## Lints
 
-We have plenty of lints in `lints.toml` that we use. Cargo currently does not natively support an extra file for lints, so we use `cargo-lints`. To check everything with our lints, run this locally:
-
 ```sh
-cargo lints clippy --workspace --all-targets
+cargo clippy --workspace --all-targets
 ```
 
 and this in your IDE:
 ```sh
-cargo lints clippy --workspace --all-targets --message-format=json
+cargo clippy --workspace --all-targets --message-format=json
 ```
-
-A few lints are commented out in `lints.toml`. This is because they should not be enabled by default, because e.g. they have false positives. However, they can be very useful sometimes.
 
 ## Pre-commit usage
 
@@ -51,7 +47,7 @@ file within the repository.
 
 If you compile the open source software that we make available to develop your
 own mobile, desktop or embeddable application, and cause that application to
-connect to our servers for any purposes, you have to aggree to our Terms of
+connect to our servers for any purposes, you have to agree to our Terms of
 Service. In short, if you choose to connect to our servers, certain restrictions
 apply as follows:
 

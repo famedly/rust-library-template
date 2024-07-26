@@ -1,5 +1,6 @@
 name: Rust
 
+# Trigger the CI on any tags, pushes to any branch and PRs to any branch.
 on:
   push:
     branches: [ "main" ]
@@ -7,10 +8,17 @@ on:
   pull_request:
     branches: [ "*" ]
 
+# Make sure there is no pipeline running uselessly.
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+# Environment variables for all jobs.
+env:
+  CARGO_TERM_COLOR: always
+
+# Defined CI jobs.
 jobs:
   check:
-    uses: famedly/backend-build-workflows/.github/workflows/rust.yml@main
+    uses: famedly/backend-build-workflows/.github/workflows/rust-workflow.yml@main
+    secrets: inherit
